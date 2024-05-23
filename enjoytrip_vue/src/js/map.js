@@ -44,7 +44,7 @@ function zzimClick(encodedArea) {
         if (zzimBtn.classList.contains("red")) {
             zzimBtn.classList.remove("red")
             zzimBtn.classList.add("black")
-            fetch("http://localhost:8080/api/removezzim", {
+            fetch("https://localhost:8080/api/removezzim", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -57,7 +57,7 @@ function zzimClick(encodedArea) {
     } else {
         zzimBtn.classList.remove("black")
         zzimBtn.classList.add("red")
-        fetch("http://localhost:8080/api/addzzim", {
+        fetch("https://localhost:8080/api/addzzim", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -89,7 +89,7 @@ async function makeList(data) {
         var userId = JSON.parse(localStorage.getItem("memberStore"))["userInfo"]["userId"]
         
         try {
-            const response = await fetch("http://localhost:8080/api/zzimlist", {
+            const response = await fetch("https://localhost:8080/api/zzimlist", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
