@@ -37,7 +37,7 @@ onMounted(() => {
       if (region1.value != "시도") {
         const num = region1.value ? region1.value : "";
         local
-          .get(`/api/gungu?sido= ${num}`)
+          .get(`/api/gungu?sido=${num}`)
           .then((response) => response.data)
           .then((data) => makeOption(data));
         // const path = "http://localhost:8080/api/gungu?sido=" + (region1.value ? region1.value : "");
