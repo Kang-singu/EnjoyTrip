@@ -54,7 +54,7 @@ onMounted(() => {
       let contentCode = content.value == "컨텐츠" ? "" : content.value;
       let keywordCode = keyword.value ? keyword.value : "";
       if (contentCode || keywordCode) {
-        let path = "http://localhost:8080/api/attractions?";
+        let path = "https://13.125.216.70:8080/api/attractions?";
         path += "&sido=" + sidoCode;
         path += "&gungu=" + gunguCode;
         path += "&type=" + contentCode;
