@@ -1,3 +1,8 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
-}
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "https://13.125.216.70:8080/"
+      }
+    ]
+  }
